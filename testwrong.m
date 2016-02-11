@@ -1,0 +1,12 @@
+clc;
+clear;
+target = imread('subb1.jpg');
+target1 = imresize(target, [32 32]);
+imwrite(target1,'subb32.jpg');
+target2 = imresize(target, [28 28]);
+imwrite(target2,'subb28.jpg');
+target3 = imresize(target, [50 50]);
+imwrite(target3,'subb50.jpg');
+imshow(target1);
+figure();
+imshow(target2);
